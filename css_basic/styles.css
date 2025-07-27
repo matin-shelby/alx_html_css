@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
+
+main article {
+    flex: 2;
+    overflow-y: auto
+}
+
+main aside {
+    flex: 1;
+    overflow-y: auto
+}
