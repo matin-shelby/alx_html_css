@@ -1,5 +1,294 @@
+/* Global Styles */
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #C271FF;
+    --text-color: #333;
+    --font-family: source-sans-pro, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-image: url('images/background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    font-size: 95px;
+    margin: 0;
+}
+button {
+    text-align: center;
+    margin: auto;
+    display: block;
+    border: none;
+    border-radius: 40px;
+    padding: 15px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    box-shadow: 0 0px 8px #333;
+    cursor: pointer;
+}
+.prpl-text {
+    color: var(--secondary-color);
+}
+
+/* navigation styles*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35.2px 70px 35.2px 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0 25px;
+    font-size: 12px;
+}
+
+/* Hero style */
+#hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    margin-top: 80px;
+}
+.hero-txt-cont span {
+    padding: 20px;
+    position: relative;
+    top: -20px;
+    font-size: 15px;
+}
+.pros-cont {
+    margin-top: 150px;
+}
+.pros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    margin-top: 40px;
+}
+.pros div {
+    width: 30%;
+    text-align: center;
+}
+.pros div img {
+    width: 50%;
+}
+.pros h3 {
+    font-size: 18px;
+}
+.pros p {
+    font-style: italic;
+    font-size: 16px;
+    padding: 10px 50px;
+}
+
+/* Tutorials Review Styles */
+#tutorials-review-cont {
+    background-color: var(--secondary-color);
+    padding: 95px 150px;
+}
+#tutorials-review-cont > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    font-size: 22px;
+}
+#tutorials-review-cont div img {
+    text-align: center;
+    border-radius: 50%;
+}
+#review-txt h3 {
+    margin-top: 20px;
+}
+
+/* Tutorials Vids Styles */
+#tutorials-cont {
+    padding: 65px 30px;
+    text-align: center;
+    color: #071629;
+}
+#tutorials-cont h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.vid-cont {
+    display: flex;
+    gap: 10px;
+    margin: 20px 85px;
+    /* width: 80%; */
+}
+.vid-box {
+    /* display: inline; */
+    text-align: start;
+    padding: 10px;
+}
+.vid-box h3 {
+    padding: 15px 0;
+    color: #071629;
+}
+.vid-box p {
+    margin-bottom: 10px;
+    color: #0716297f;
+}
+.tutorial-thumbnail {
+    width: 100%;
+    height: 42%;
+    text-align: center;
+    margin: auto;
+    background-image: url('images/preview.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.tutorial-1 {
+    background-image: url('images/preview-1.png');
+}
+.tutorial-2 {
+    background-image: url('images/preview-2.png');
+}
+.tutorial-3 {
+    background-image: url('images/preview-3.png');
+}
+div.tutorial-thumbnail:nth-of- {
+    background-image: url('images/preview-1.png');
+}
+.tutorial-thumbnail img {
+    margin-top: 20%;
+    cursor: pointer;
+}
+.author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.author img {
+    width: 20%;
+    margin-right: 15px;
+}
+.star-cont {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.star-cont div {
+    padding: 5px;
+    font-size: 18px;
+}
+.p-star, .p-author {
+    color: var(--secondary-color);
+}
+.grey-star {
+    color: #D8D8D8;
+}
+.rate-time-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.duration {
+    text-align: right;
+    color: var(--secondary-color) !important;
+}
+
+/* Membership Section Styles */
+#membership-cont {
+    background-color: #071629;
+    padding: 50px 0;
+    text-align: center;
+}
+#membership-cont > div {
+    width: 80%;
+    margin: auto;
+}
+#membership-count h2 {
+    font-size: 25px;
+}
+.member-deals{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 60px 0;
+}
+.deal h3 {
+    padding: 25px 0;
+}
+
+/* FAQ Styles */
+#faq-cont {
+    padding: 50px 0;
+    text-align: center;
+}
+#faq-cont h2 {
+    font-size: 60px;
+    color: #071629;
+}
+.faq-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 40px;
+    margin: 50px 150px;
+}
+.faq {
+    width: 38%;
+    text-align: start;
+
+}
+.faq h3 {
+    color: #071629;
+    margin: 20px 0;
+}
+.faq p {
+    color: #0716297f;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #071629;
+    color: var(--primary-color);
+    padding: 90px 50px 35px;
+}
+#footer-cont {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#footer-cont p {
+    margin-top: 70px;
+    color: #ffffff7f;
+}
+#img-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-cont a {
+    padding: 8px;
 }
